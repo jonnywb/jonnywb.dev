@@ -32,7 +32,12 @@
       const curr = window.scrollY;
       if (curr > 80) {
         header.classList.add("header--scrolled");
-        if (curr > lastScroll && curr > 300) {
+        if (
+          // This fixes the scroll issue when mobile menu is showing
+          navOverlay.classList.contains("is-visible")
+        ) {
+          header.classList.remove("header--hidden");
+        } else if (curr > lastScroll && curr > 300) {
           header.classList.add("header--hidden");
         } else {
           header.classList.remove("header--hidden");
