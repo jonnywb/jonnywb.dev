@@ -18,6 +18,7 @@
     />
 
     <!--Styles-->
+    <link rel="stylesheet" href="./base.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -45,7 +46,7 @@
               J
             </text>
           </svg>
-          jonny.dev
+          jonnywb.dev
         </a>
 
         <nav class="header_nav" id="mainNav" role="navigation" aria-label="Main">
@@ -73,7 +74,733 @@
 
     <!-- Main Content -->
     <main id="main">
-      <!---->
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <div class="hero__badge">
+              <span class="status-dot"></span>
+              Open to opportunities
+            </div>
+            <h1 class="hero__heading">
+              Hi, I'm Jonathan. <br />
+              I build <span class="accent">full-stack</span><br />
+              applications.
+            </h1>
+            <p class="hero__desc">
+              Junior developer specialising in JavaScript, TypeScript, Python, React and React Native. I create
+              responsive web apps and cross-platform mobile experiences with clean, maintainable code.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+                View my work
+              </a>
+              <a href="#contact" class="btn btn--secondary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Get in touch
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__terminal">
+            <div class="terminal__header">
+              <span class="terminal__dot terminal__dot--red"></span>
+              <span class="terminal__dot terminal__dot--yellow"></span>
+              <span class="terminal__dot terminal__dot--green"></span>
+              <span class="terminal__title">~/jonnywb/portfolio</span>
+            </div>
+            <div class="terminal__body" id="terminal">
+              <!-- Lines populated by JS -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="section__inner fade-in">
+          <p class="section__label">About me</p>
+          <h2 class="section__heading">From stage to stack.</h2>
+          <p class="section__desc">
+            A musician turned developer, bringing the same discipline and creative problem-solving from eight years of
+            professional performance to building modern software.
+          </p>
+
+          <div class="about__grid">
+            <div class="about__text">
+              <p>
+                After <strong>eight years as a professional musician</strong> performing on cruise ships worldwide, I
+                discovered a deep passion for software development. The same skills that made me a strong musician —
+                attention to detail, pattern recognition, working under pressure, and relentless practice — translate
+                directly into writing great code.
+              </p>
+              <p>
+                I specialise in the <strong>TypeScript/JavaScript ecosystem</strong>, building full-stack web
+                applications with React, cross-platform mobile apps with React Native and Expo, and backend services
+                with Node.js, Express, and Supabase.
+              </p>
+              <p>
+                I'm based in <strong>London, UK</strong> and actively seeking junior developer roles where I can
+                contribute to a team, learn from experienced engineers, and build products that make a difference.
+              </p>
+            </div>
+            <div class="about__stats">
+              <div class="stat-card fade-in">
+                <div class="stat-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6" />
+                    <polyline points="8 6 2 12 8 18" />
+                  </svg>
+                </div>
+                <div class="stat-card__value">9+</div>
+                <div class="stat-card__label">Technologies in stack</div>
+              </div>
+              <div class="stat-card fade-in">
+                <div class="stat-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                </div>
+                <div class="stat-card__value">3</div>
+                <div class="stat-card__label">Portfolio projects</div>
+              </div>
+              <div class="stat-card fade-in">
+                <div class="stat-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                  </svg>
+                </div>
+                <div class="stat-card__value">Full-Stack</div>
+                <div class="stat-card__label">Web + Mobile + Backend</div>
+              </div>
+              <div class="stat-card fade-in">
+                <div class="stat-card__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M2 12h20" />
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                    />
+                  </svg>
+                </div>
+                <div class="stat-card__value">UK</div>
+                <div class="stat-card__label">Based in Manchester</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills" style="background: var(--color-surface)">
+        <div class="section__inner">
+          <p class="section__label">Tech Stack</p>
+          <h2 class="section__heading">Tools I work with.</h2>
+          <p class="section__desc">
+            My core stack covers the full JavaScript ecosystem — from type-safe frontends to database-backed APIs and
+            native mobile apps.
+          </p>
+
+          <div class="skills__grid">
+            <!-- TypeScript -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--ts">TS</div>
+                <div>
+                  <div class="skill-card__name">TypeScript</div>
+                  <div class="skill-card__level">Primary Language</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                Type-safe development across the full stack. Interfaces, generics, and strict mode for reliable,
+                self-documenting code.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">Strict Mode</span>
+                <span class="tag">Generics</span>
+                <span class="tag">Type Guards</span>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--js">JS</div>
+                <div>
+                  <div class="skill-card__name">JavaScript</div>
+                  <div class="skill-card__level">Core Language</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                ES2024+ features, async/await patterns, DOM manipulation, and modern module systems. Strong vanilla JS
+                foundation.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">ES2024+</span>
+                <span class="tag">Async/Await</span>
+                <span class="tag">ESM</span>
+              </div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--py">Py</div>
+                <div>
+                  <div class="skill-card__name">Python</div>
+                  <div class="skill-card__level">Core Language</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                Clear, practical development for backend logic, scripting, and data handling. Great for readable code,
+                automation, and problem-solving across a range of projects.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">Automation</span>
+                <span class="tag">APIs</span>
+                <span class="tag">Data Handling</span>
+              </div>
+            </div>
+
+            <!-- React -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--react">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="currentColor" stroke-width="1.5" />
+                    <ellipse
+                      cx="12"
+                      cy="12"
+                      rx="11"
+                      ry="4.2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      transform="rotate(60 12 12)"
+                    />
+                    <ellipse
+                      cx="12"
+                      cy="12"
+                      rx="11"
+                      ry="4.2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      transform="rotate(120 12 12)"
+                    />
+                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="skill-card__name">React</div>
+                  <div class="skill-card__level">Frontend Framework</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                Component-driven UIs with hooks, context, and modern patterns. Server components, suspense boundaries,
+                and state management.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">Hooks</span>
+                <span class="tag">Context API</span>
+                <span class="tag">Server Components</span>
+              </div>
+            </div>
+
+            <!-- React Native -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--rn">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="5" y="2" width="14" height="20" rx="3" />
+                    <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="skill-card__name">React Native</div>
+                  <div class="skill-card__level">Mobile Framework</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                Cross-platform iOS and Android apps with Expo. Native modules, navigation, camera integration, and
+                platform-specific UI.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">Expo</span>
+                <span class="tag">Navigation</span>
+                <span class="tag">Camera/NFC</span>
+              </div>
+            </div>
+
+            <!-- Node.js -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--node">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2l9 5.25v9.5L12 22l-9-5.25v-9.5L12 2z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <text
+                      x="12"
+                      y="15"
+                      text-anchor="middle"
+                      font-size="8"
+                      font-weight="700"
+                      fill="currentColor"
+                      font-family="sans-serif"
+                    >
+                      N
+                    </text>
+                  </svg>
+                </div>
+                <div>
+                  <div class="skill-card__name">Node.js</div>
+                  <div class="skill-card__level">Runtime</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                Server-side JavaScript for APIs, microservices, and backend logic. File system operations, streams, and
+                process management.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">REST APIs</span>
+                <span class="tag">File I/O</span>
+                <span class="tag">NPM</span>
+              </div>
+            </div>
+
+            <!-- Express.js -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--exp">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M4 12h16M4 12l4-4m-4 4l4 4m8-8l4 4m-4-4l-4 4" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="skill-card__name">Express.js</div>
+                  <div class="skill-card__level">Backend Framework</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                RESTful API design with middleware, routing, error handling, and authentication. Clean separation of
+                concerns and MVC patterns.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">Middleware</span>
+                <span class="tag">REST</span>
+                <span class="tag">Auth</span>
+              </div>
+            </div>
+
+            <!-- Supabase -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--supa">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M13.5 21.2c-.4.5-1.2.1-1.1-.5l.9-8.7H5.6c-.5 0-.8-.6-.5-1l8.4-10c.4-.5 1.2-.1 1.1.5l-.9 8.7h7.7c.5 0 .8.6.5 1l-8.4 10z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="skill-card__name">Supabase</div>
+                  <div class="skill-card__level">Backend-as-a-Service</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                PostgreSQL database, authentication, real-time subscriptions, row-level security, and storage. The
+                open-source Firebase alternative.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Auth</span>
+                <span class="tag">RLS</span>
+              </div>
+            </div>
+
+            <!-- Vite -->
+            <div class="skill-card fade-in">
+              <div class="skill-card__header">
+                <div class="skill-card__icon skill-card__icon--vite">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M21 3L12 22l-2-9L3 11l18-8z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <div class="skill-card__name">Vite</div>
+                  <div class="skill-card__level">Build Tool</div>
+                </div>
+              </div>
+              <p class="skill-card__desc">
+                Lightning-fast development server with HMR, optimised builds with Rollup, and zero-config
+                React/TypeScript project scaffolding.
+              </p>
+              <div class="skill-card__tags">
+                <span class="tag">HMR</span>
+                <span class="tag">Rollup</span>
+                <span class="tag">ESBuild</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <div class="section__inner">
+          <p class="section__label">Projects</p>
+          <h2 class="section__heading">Things I've built.</h2>
+          <p class="section__desc">/// *** ADD DESCRIPTION HERE ***///</p>
+
+          <div class="projects__grid">
+            <!-- DexTrader -->
+            <!--WIP
+            <article class="project-card fade-in">
+              <div class="project-card__visual">
+                <div class="project-card__phone">
+                  <div class="phone__notch"></div>
+                  <div class="phone__content">
+                    <div class="mockup__line mockup__line--medium"></div>
+                    <div class="mockup__line mockup__line--short"></div>
+                    <div class="mockup__grid">
+                      <div class="mockup__block mockup__block--accent"></div>
+                      <div class="mockup__block"></div>
+                      <div class="mockup__block"></div>
+                      <div class="mockup__block mockup__block--accent"></div>
+                    </div>
+                    <div class="mockup__line mockup__line--long"></div>
+                    <div class="phone__tab-bar">
+                      <div class="phone__tab phone__tab--active"></div>
+                      <div class="phone__tab"></div>
+                      <div class="phone__tab"></div>
+                      <div class="phone__tab"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__info">
+                <span class="project-card__type">Mobile App</span>
+                <h3 class="project-card__title">DexTrader</h3>
+                <p class="project-card__desc">
+                  A cross-platform mobile app for trading card collectors. Track your collection, monitor card values
+                  with live pricing data, manage wishlists, and assess card gradability — all from your phone.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tag">React Native</span>
+                  <span class="tag">Expo</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">Pokemon TCG API</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    Source Code
+                  </a>
+                  <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>-->
+
+            <!-- Forum Forge -->
+            <article class="project-card fade-in">
+              <div class="project-card__visual">
+                <img src="./img/squareup1.png" />
+              </div>
+              <div class="project-card__info">
+                <span class="project-card__type">Cross-Platform Mobile App</span>
+                <h3 class="project-card__title">SquareUp</h3>
+                <p class="project-card__desc">
+                  A social board-games events app, for planning board-games nights with friends, with ability to message
+                  and see events in your local area
+                </p>
+                <div class="project-card__tech">
+                  ß
+                  <span class="tag">React-Native</span>
+                  <span class="tag">Expo</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Firebase</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/magnificent-angels/square-up"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    Source Code
+                  </a>
+
+                  <!-- NEED TO ADD LIVE DEMO OF SQUARE UP APP HERE (Expo Snack) !!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                  <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card fade-in">
+              <div class="project-card__visual">
+                <img src="./img/Forum-forge-screenshot.png" />
+              </div>
+              <div class="project-card__info">
+                <span class="project-card__type">Web App</span>
+                <h3 class="project-card__title">Forum Forge</h3>
+                <p class="project-card__desc">A recreation of Reddit with seperate front and back-ends.</p>
+                <div class="project-card__tech">
+                  <span class="tag">React</span>
+                  <span class="tag">Vite</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">Node.js</span>
+                </div>
+                <div class="project-card__links">
+                  <a
+                    href="https://github.com/jonnywb/nc-news"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    Source Code
+                  </a>
+                  <a
+                    href="https://forum-forge.netlify.app/"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Portfolio Site -->
+            <article class="project-card fade-in">
+              <div class="project-card__visual">
+                <div class="project-card__mockup">
+                  <div class="mockup__bar">
+                    <span class="mockup__bar-dot"></span>
+                    <span class="mockup__bar-dot"></span>
+                    <span class="mockup__bar-dot"></span>
+                  </div>
+                  <div class="mockup__content">
+                    <div class="mockup__line mockup__line--short"></div>
+                    <div class="mockup__line mockup__line--long"></div>
+                    <div class="mockup__line mockup__line--medium"></div>
+                    <div style="height: 8px"></div>
+                    <div class="mockup__line mockup__line--long"></div>
+                    <div class="mockup__line mockup__line--short"></div>
+                    <div class="mockup__grid">
+                      <div class="mockup__block mockup__block--accent"></div>
+                      <div class="mockup__block mockup__block--accent"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card__info">
+                <span class="project-card__type">Website</span>
+                <h3 class="project-card__title">This Portfolio</h3>
+                <p class="project-card__desc">
+                  A custom-built developer portfolio (this site) with dark/light mode, responsive design, scroll
+                  animations, and a terminal-inspired aesthetic. No frameworks — just HTML, CSS, and vanilla JS.
+                </p>
+                <div class="project-card__tech">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Responsive</span>
+                </div>
+                <div class="project-card__links">
+                  <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                      />
+                    </svg>
+                    Source Code
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section" id="experience" style="background: var(--color-surface)">
+        <div class="section__inner fade-in">
+          <p class="section__label">Journey</p>
+          <h2 class="section__heading">How I got here.</h2>
+          <p class="section__desc">
+            A non-traditional path into tech, bringing a unique perspective and transferable skills from a career in
+            professional music.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__date">2026 — Present</div>
+              <div class="timeline__title">Junior Full-Stack Developer</div>
+              <div class="timeline__company">Self-Directed / Portfolio Building</div>
+              <p class="timeline__desc">
+                Building production-quality portfolio projects using JavaScript,TypeScript, Python, React, React Native,
+                and Supabase. Studying modern development patterns, contributing to open source, and preparing for
+                full-time roles.
+              </p>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__date">2018 — 2026</div>
+              <div class="timeline__title">Professional Musician</div>
+              <div class="timeline__company">Cunard Line — Queen Elizabeth</div>
+              <p class="timeline__desc">
+                Eight years performing as a brass player in theatre and ballroom bands on international cruise ships.
+                Led sections, adapted to high-pressure live performances, and developed strong collaborative skills
+                working with diverse, multinational teams.
+              </p>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__date">2020 — Ongoing</div>
+              <div class="timeline__title">Self-Taught Developer</div>
+              <div class="timeline__company">Continuous Learning</div>
+              <p class="timeline__desc">
+                Began learning web development during downtime, progressing from HTML/CSS fundamentals through
+                JavaScript, TypeScript, React, and full-stack architecture. Completed projects, courses, and built real
+                applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact" id="contact">
+        <div class="section__inner">
+          <p class="section__label">Contact</p>
+          <h2 class="section__heading">Let's connect.</h2>
+          <p class="section__desc">
+            Open to junior developer roles, freelance projects, and collaboration opportunities. Drop me a message or
+            reach out on any platform.
+          </p>
+
+          <div class="contact__grid">
+            <div class="contact__links">
+              <a href="mailto:jonnywb@gmail.com" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline pointqs="22,6 12,13 2,6" />
+                </svg>
+                <span>jonnywb.dev@gmail.com</span>
+              </a>
+              <a href="https://github.com/jonnywb" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  />
+                </svg>
+                <span>github.com/jonnywb</span>
+              </a>
+              <a href="https://linkedin.com/in/jonnywb" class="contact-link" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <span>linkedin.com/in/jonnywb</span>
+              </a>
+            </div>
+
+            <div class="contact__right">
+              <div class="hero__terminal" style="max-width: 100%">
+                <div class="terminal__header">
+                  <span class="terminal__dot terminal__dot--red"></span>
+                  <span class="terminal__dot terminal__dot--yellow"></span>
+                  <span class="terminal__dot terminal__dot--green"></span>
+                  <span class="terminal__title">~/contact</span>
+                </div>
+                <div class="terminal__body" style="min-height: auto">
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="prompt">$</span> <span class="cmd">cat</span>
+                    <span class="string">availability.txt</span>
+                  </div>
+                  <br />
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="comment">// Currently seeking:</span>
+                  </div>
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="key">→</span> Junior Developer roles (remote / hybrid)
+                  </div>
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="key">→</span> Full-stack or frontend positions
+                  </div>
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="key">→</span> Freelance / contract work
+                  </div>
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="key">→</span> Open source collaboration
+                  </div>
+                  <br />
+                  <div class="terminal__line" style="animation-delay: 0s; opacity: 1">
+                    <span class="prompt">$</span> <span class="string">Response time: &lt; 24 hours</span>
+                    <span class="terminal__cursor"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
