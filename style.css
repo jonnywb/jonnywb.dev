@@ -1047,15 +1047,6 @@
   font-size: var(--text-xs);
   color: var(--color-text-faint);
 }
-.footer__attribution a {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  text-decoration: none;
-  transition: color var(--transition-interactive);
-}
-.footer__attribution a:hover {
-  color: var(--color-text-muted);
-}
 
 /* --- SCROLL ANIMATIONS --- 
    Uses IntersectionObserver JS fallback for broad support */
