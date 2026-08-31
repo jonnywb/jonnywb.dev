@@ -615,6 +615,11 @@
   background: #646cff20;
   color: #646cff;
 }
+.skill-card__icon--nextjs {
+  background: #006aff70;
+  color: var(--color-text);
+}
+
 .skill-card__icon--rn {
   background: #61dafb20;
   color: #087ea4;

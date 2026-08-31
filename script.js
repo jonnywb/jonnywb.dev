@@ -93,7 +93,7 @@
     },
     {
       type: "code",
-      text: '    <span class="string">"React Native"</span>, <span class="string">"Node.js"</span>',
+      text: '    <span class="string">"React Native"</span>, <span class="string">"Node.js"</span><span class="string">Next.js</span>',
     },
     {
       type: "code",
